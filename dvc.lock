@@ -1,0 +1,31 @@
+schema: '2.0'
+stages:
+  training:
+    cmd: python -m src.pipeline.train_pipeline
+    deps:
+    - path: notebook/data/stud.csv
+      hash: md5
+      md5: 72e8feb9e6dd40e0cc9b4563bdece775
+      size: 72036
+    - path: src/components/data_ingestion.py
+      hash: md5
+      md5: 1330125b856d114dc354b2e923b6b754
+      size: 1596
+    - path: src/components/data_transformation.py
+      hash: md5
+      md5: e4d6fb3b787e8fa1fad93b357742d171
+      size: 3923
+    - path: src/components/model_trainer.py
+      hash: md5
+      md5: 6d2838bedd837fd8a4a37eda63d89c5e
+      size: 3570
+    - path: src/pipeline/train_pipeline.py
+      hash: md5
+      md5: e2c596a968bc112f80ced691934bb040
+      size: 891
+    outs:
+    - path: artifacts/
+      hash: md5
+      md5: b3f9824d071338fd3552d8168e865424.dir
+      size: 118354
+      nfiles: 5

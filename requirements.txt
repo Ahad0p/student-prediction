@@ -6,4 +6,7 @@ catboost
 xgboost
 dill
 flask
+dvc
+mlflow
+dagshub
 # -e .
