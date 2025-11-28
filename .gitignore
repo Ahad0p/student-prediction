@@ -29,3 +29,4 @@ dist/
 artifacts/*.pkl
 artifacts/*.csv
 artifacts/*.h5
+artifacts
